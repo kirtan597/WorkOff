@@ -1,4 +1,4 @@
-# 🚀 Staff Leave Management System (SLMS)
+# WorkOff — Staff Leave Management System
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Django](https://img.shields.io/badge/Django-Framework-green?logo=django)
@@ -9,7 +9,7 @@
 
 ## 📌 Project Overview
 
-The **Staff Leave Management System (SLMS)** is a web-based application developed using **Python and Django** to automate and simplify the leave management process within an organization. The system enables staff members to apply for leaves, monitor application status, and manage leave history, while administrators can efficiently review, approve, reject, and track leave requests.
+**WorkOff** is a web-based Staff Leave Management application developed using **Python and Django** to automate and simplify the leave management process within an organization. The system enables staff members to apply for leaves, monitor application status, and manage leave history, while administrators can efficiently review, approve, reject, and track leave requests.
 
 This project demonstrates the implementation of modern web development practices, including **Django ORM**, **authentication and authorization**, **role-based access control**, **CRUD operations**, and **software testing**.
 
@@ -189,32 +189,34 @@ User
 ## 📂 Project Structure
 
 ```text
-SLMS/
+WorkOff/
 │
 ├── accounts/
 │   ├── migrations/
-│   ├── templates/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
 │   └── tests.py
 │
 ├── leaves/
 │   ├── migrations/
-│   ├── templates/
 │   ├── models.py
 │   ├── views.py
 │   ├── urls.py
-│   ├── forms.py
 │   └── tests.py
 │
 ├── static/
 │   ├── css/
-│   ├── js/
-│   └── images/
+│   └── js/
 │
 ├── templates/
+│   ├── accounts/
+│   ├── leaves/
+│   ├── home.html
+│   ├── login.html
+│   ├── register.html
+│   ├── admin.html
+│   └── staff.html
 │
 ├── slms/
 │   ├── settings.py
@@ -222,6 +224,7 @@ SLMS/
 │   ├── wsgi.py
 │   └── asgi.py
 │
+├── result/
 ├── db.sqlite3
 ├── manage.py
 ├── requirements.txt
@@ -235,8 +238,8 @@ SLMS/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/slms.git
-cd slms
+git clone https://github.com/kirtan597/WorkOff.git
+cd WorkOff
 ```
 
 ### 2️⃣ Create Virtual Environment
@@ -294,7 +297,7 @@ http://127.0.0.1:8000/
 
 ## 🧪 Testing
 
-The project includes comprehensive testing to ensure reliability and correctness.
+WorkOff includes comprehensive testing to ensure reliability and correctness.
 
 ### Unit Testing
 
@@ -376,7 +379,6 @@ python manage.py test
 ## 🔄 Leave Workflow
 <img src="result/slms.png">
 
-
 ## 🚀 Future Enhancements
 
 * Email Notifications
@@ -435,7 +437,7 @@ This project demonstrates practical knowledge of:
 
 ## 💼 Resume Highlights
 
-✔ Developed a role-based Staff Leave Management System using Django.
+✔ Developed a role-based Staff Leave Management System (WorkOff) using Django.
 
 ✔ Implemented secure authentication and authorization mechanisms.
 
@@ -451,7 +453,7 @@ This project demonstrates practical knowledge of:
 
 ## 👨‍💻 Author
 
-**Abbireddy Venkata Chandu**
+**Kirtan**
 
 Software Developer | Python Developer | Django Developer
 
