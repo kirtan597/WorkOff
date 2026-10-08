@@ -104,7 +104,7 @@ def approve_leave(request, id):
         End Date : {leave.end_date}
 
         Regards, 
-        SLMS Team
+        WorkOff Team
      ''' ,
     from_email = settings.EMAIL_HOST_USER,
     recipient_list = [leave.email],
@@ -127,7 +127,7 @@ def reject_leave(request,id):
         End Date : {leave.end_date}
 
         Regards,
-        SLMS Team
+        WorkOff Team
         ''',
         from_email = settings.EMAIL_HOST_USER,
         recipient_list = [leave.email],
